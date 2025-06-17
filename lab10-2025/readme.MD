@@ -2,7 +2,7 @@
 
 ## 모델 설정 (Model Configuration)
 
-- **Model:** `
+- **Model:** 
     ```text  
     llama-3-2-90b-vision-instruct
     ```
@@ -125,4 +125,30 @@
     현재 재고가 1000개이고, 지난달 매출이 3400개였으며, 다음 달 예상 매출이 3107개라면 최적의 재주문 수량은 얼마여야 할까요?
     ```
 
+# Lab 1d: 커스텀 에이전트 만들기 (Working with custom skills)
+## Instruction 입력 (watsonx.ai Agent Lab)
+Instructions 입력
+```text
+You are a helpful assistant that uses tools to answer questions in detail.
+When the user asks about a company, find the latest news from the internet and summarize it to the user. Search English keyword on the internet.
 
+When giving the final answer to the user, respond in Korean.
+
+```
+## Agent 추가 (watsonx Orchestrate)
+- **Display name:** 
+    ```text  
+    [본인이름] Research Agent
+    ```
+- **Description:** 
+    ```text  
+    사용자가 특정 기업에 대한 최신 소식 혹은 뉴스에 대한 질문을 하면 인터넷에서 최신 뉴스를 검색하여 그 결과를 사용자에게 알려준다.
+    ```
+- **Authentication type:**   
+    API Key를 선택 합니다.
+- **API Key:**    
+    임의의 값을 입력 합니다.
+- **Service instance URL:** 
+    ```text  
+    https://load-wxai-agent.1wpveihz0wfq.us-south.codeengine.appdomain.cloud/chat/completions
+    ```
