@@ -1,14 +1,14 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "Get Historic Sales Ko",
+    "title": "JH Get Historic Sales",
     "description": "API that converts natural language queries into SQL and executes them on a SQLite database.",
     "version": "1.0.0"
   },
   "servers": [
     {
-      "url": "https://text2sql-text2sql-project.apps.itz-daq30p.osv.techzone.ibm.com",
-      "description": "Development server"
+      "url": "https://text2sql-crewai.1wou1oyedt86.us-south.codeengine.appdomain.cloud",
+      "description": "Deplopment server"
     }
   ],
   "security": [
@@ -19,9 +19,9 @@
   "paths": {
     "/query": {
       "post": {
-        "summary": "Text2SQL with Crew AI",
-        "description": "Takes a natural language query, converts it into an SQL query, executes it, and returns the results.",
-        "operationId": "processQuery",
+        "summary": "JH Text2SQL with Crew AI",
+        "description": "JH Takes a natural language query, converts it into an SQL query, executes it, and returns the results.",
+        "operationId": "JHprocessQuery",
         "requestBody": {
           "required": true,
           "content": {
@@ -90,7 +90,7 @@
               "type": "object",
               "properties": {
                 "month_year": { "type": "string" },
-                "total_figure": { "type": "number" }
+                "total_figure": { "type": "integer" }
               },
               "required": ["month_year", "total_figure"]
             }
