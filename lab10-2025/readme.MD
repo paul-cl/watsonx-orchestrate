@@ -87,10 +87,11 @@
 
 ## 커스텀 스킬 라우팅 설명 (Built-in Skill Routing Description)
 
-### Get Historic Sales
+### Get Historic Sales (Text2SQL with Crew AI)
 - **라우팅 설명 (Routing Description):**
     ```text
     자연어 쿼리를 가져와서 SQL 쿼리로 변환하고 실행한 후 본문과 결과를 반환합니다.
+    예) 지난 3달 동안의 Xtralife의 매출 수량을 알려줘
     ```
 - **질문 :**
     ```text
@@ -101,7 +102,7 @@
     지난달 Xtralife의 매출을 알려줘
     ```
 
-### Time Series Forecasting
+### Time Series Forecasting(AutoAI Predict)
 - **라우팅 설명 (Routing Description):**
     ```text
     제공된 인풋을 활용하여 IBM watsonx에서 예측을 진행합니다. (예측에 사용되는 것은 단순한 숫자형태로 전달되어야 합니다. e.g. "1", "2", "3")
@@ -115,7 +116,7 @@
     다음달 예상 판매량을 예측해주세요
     ```
 
-### Calculate Reorder Quantity
+### Calculate Reorder Quantity(Optimal Reorder Quantity)
 - **라우팅 설명 (Routing Description):**
     ```text
     최적의 재주문 수량을 계산하기 위해 과거 판매 및 예측을 진행 만일 한국어가 정확하게 출력되지 않으면 이를 수정해서 깔끔한 한국어답변으로 만들어주세요.
@@ -138,7 +139,7 @@ When giving the final answer to the user, respond in Korean.
 ## Agent 추가 (watsonx Orchestrate)
 - **Display name:** 
     ```text  
-    [본인이름] Research Agent
+    [본인이름] Researcher Agent
     ```
 - **Description:** 
     ```text  
