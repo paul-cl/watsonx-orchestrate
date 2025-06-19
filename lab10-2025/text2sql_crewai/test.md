@@ -1,5 +1,5 @@
 curl -X POST \
-  https://text2sql-text2sql-project.apps.itz-daq30p.osv.techzone.ibm.com/query \
+  https://text2sql-crewai.1wradzln6ree.us-south.codeengine.appdomain.cloud/components/schemas/Text2SQLRequest \
   -H "Content-Type: application/json" \
   -u "test:test" \
   -d '{
