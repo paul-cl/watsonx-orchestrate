@@ -151,5 +151,5 @@ When giving the final answer to the user, respond in Korean.
     임의의 값을 입력 합니다.
 - **Service instance URL:** 
     ```text  
-    https://load-wxai-agent.1wpveihz0wfq.us-south.codeengine.appdomain.cloud/chat/completions
+    https://load-wxai-agent.1wpveihz0wfq.us-south.codeengine.appdomain.cloud/chat/completions/
     ```
