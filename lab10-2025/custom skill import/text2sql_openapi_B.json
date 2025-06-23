@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://text2sql-crewai.1wou1oyedt86.us-south.codeengine.appdomain.cloud",
+      "url": "https://text2sql-app.1wrbgjmhze46.us-south.codeengine.appdomain.cloud",
       "description": "Deplopment server"
     }
   ],
