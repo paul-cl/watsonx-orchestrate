@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "JH Get Historic Sales A",
+    "title": "juheon Get Historic Sales A",
     "description": "API that converts natural language queries into SQL and executes them on a SQLite database.",
     "version": "1.0.0"
   },
@@ -19,7 +19,7 @@
   "paths": {
     "/query": {
       "post": {
-        "summary": "JH Text2SQL with Crew AI A",
+        "summary": "juehon Text2SQL with Crew AI A",
         "description": "JH Takes a natural language query, converts it into an SQL query, executes it, and returns the results.",
         "operationId": "JHprocessQuery",
         "requestBody": {
